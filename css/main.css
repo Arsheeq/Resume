@@ -7,7 +7,7 @@
   content: '';
   display: inline-block;
   position: absolute;
-  background-color: #fff;
+  background-color: #171616;
   border-radius: 100%;
   width: 24px;
   height: 24px;
@@ -17,7 +17,7 @@
   z-index: 2; }
 
 .timeline-body {
-  border-left: 2px solid #E6E9ED; }
+  border-left: 2px solid #0a0a0a; }
 
 .timeline-card-primary:before {
   border-color: var(--bs-primary); }
@@ -63,7 +63,7 @@ html, body {
   margin-left: 1rem; }
 
 .cover {
-  height: 500px; }
+  height: auto; }
 
 .cover > img {
   -o-object-fit: cover;
