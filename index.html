@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Arsheeq</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    <link rel = "icon" type = "image/png" href = "images/1by2.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+    <link rel="icon" type="image/png" href="images/1by2.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'" />
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
     </noscript>
     <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
     <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
@@ -19,57 +19,96 @@
     <noscript>
       <style type="text/css">
         [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
+          opacity: 1 !important;
+          transform: translate(0) scale(1) !important;
         }
       </style>
     </noscript>
+    <style>
+      .clock {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: white;
+        position: absolute; /* Adjust position */
+        top: 5px; /* Move up */
+        left: 45%;
+        transform: translateX(-50%);
+        z-index: 10;
+        opacity: 0;
+        animation: fadeIn 1s forwards; /* Fade-in animation */
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
 
-
   <body class="bg-light" id="top">
-
-
     <header class="d-print-none">
       <div class="container text-center text-lg-left">
         <div class="pt-4 clearfix">
           <h1 class="site-title mb-0">Arsheeq's Portfolio</h1>
-          <div class="site-nav"> 
+          <div class="site-nav">
             <nav role="navigation">
               <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Skills</span></a>
-                </li>
-                 <li class="nav-item"><a class="nav-link" href="#certifications" title="Certifications"><span class="menu-title">Certifications</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">Experience</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#projects" title="Projects"><span class="menu-title">Projects</span></a>             
-                 </ul>
+                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Skills</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications" title="Certifications"><span class="menu-title">Certifications</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">Experience</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects" title="Projects"><span class="menu-title">Projects</span></a></li>
+              </ul>
             </nav>
           </div>
         </div>
       </div>
     </header>
 
-
     <div class="page-content">
       <div class="container">
-<div class="resume-container">
-  <div class="shadow-1-strong bg-white my-5" id="intro">
-    <div class="bg-info text-white">
-      <div class="cover bg-image"><img src="images/header-background.png"/>
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
-          <div class="text-center p-5">
-            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/avatar.jpg" width="160" height="160"/></div>
-            <div class="header-bio mt-3">
-              <div data-aos="zoom-in" data-aos-delay="0">
-                <h2 class="h1">Arsheeq</h2>
-                <p>DevOps Engineer</p>
-              </div>
+        <div class="resume-container">
+          <div class="shadow-1-strong bg-white my-5" id="intro">
+            <div class="bg-info text-white">
+              <div class="cover bg-image">
+                <img src="images/header-background.png" />
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+                  <div class="text-center p-5">
+                    <div id="clock" class="clock" data-aos="fade-in"></div>
+                    <!-- Clock added here -->
+                    <div class="avatar p-1">
+                      <img class="img-thumbnail shadow-2-strong" src="images/avatar.JPG" width="150" height="150" />
+                    </div>
+                    <div class="header-bio mt-3">
+                      <div data-aos="zoom-in" data-aos-delay="0">
+                        <h2 class="h1">Arsheeq</h2>
+                        <p>DevOps Engineer</p>
+                      </div>
+
+                      <script>
+                        function updateClock() {
+                          var now = new Date();
+                          var hours = now.getHours();
+                          var minutes = now.getMinutes().toString().padStart(2, '0');
+                          var seconds = now.getSeconds().toString().padStart(2, '0');
+                      
+                          // If hours are less than 10, don't pad the leading zero
+                          document.getElementById('clock').textContent = hours + '-' + minutes + '-' + seconds;
+                        }
+                      
+                        setInterval(updateClock, 1000);
+                        updateClock(); // Initial call to display the clock immediately
+                      </script>                      
+  </body>
+</html>
 
 
               <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
